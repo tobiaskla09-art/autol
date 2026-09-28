@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Vender tu auto en Auto Libre. Gestioná tus operaciones en Auto Libre.">
+<title>Vender tu auto | Auto Libre</title><link rel="stylesheet" href="css/styles.css"></head>
+<body><a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="container header-inner"><a class="logo" href="index.html"><img src="img/logo-autolibre.png" alt="Logo de Auto Libre" class="logo-image"></a><nav aria-label="Navegación principal"><ul class="nav-list"><li><a href="index.html">Inicio</a></li><li><a href="productos.html">Autos</a></li><li><a href="reservar.html">Reservar turno</a></li><li><a href="vender.html">Vender tu auto</a></li><li><a href="actividad.html">Actividad</a></li><li><a href="login.html">Cuenta</a></li></ul></nav></div></header>
+<main id="contenido"><section class="section container narrow"><p><a href="index.html">← Volver</a></p><h1>Vendé tu auto</h1>
+<p class="lead">Completá los datos de tu auto.</p>
+<form class="stack" id="form-vender"><div><label for="v-marca">Marca</label><input id="v-marca" name="marca" required></div>
+<div><label for="v-modelo">Modelo</label><input id="v-modelo" name="modelo" required></div>
+<div><label for="v-anio">Año</label><input id="v-anio" name="anio" type="number" min="1900" max="2100" required></div>
+<div><label for="v-km">Kilometraje</label><input id="v-km" name="kilometraje" type="number" min="0" required></div>
+<div><label for="v-precio">Precio pretendido</label><input id="v-precio" name="precio" type="number" min="0" required></div>
+<div><label for="v-foto">Foto del auto</label><input id="v-foto" name="foto" type="file" accept="image/*" required></div>
+
+<button class="button" type="submit">Publicar</button></form><p id="estado-vender" role="status"></p></section></main><footer class="site-footer"><div class="container"><p><strong>Auto Libre</strong> · Compra y venta de autos</p><p><a href="contacto.html">Contacto</a> · autolibre@gmail.com</p></div></footer><script src="js/app.js" defer></script></body></html>

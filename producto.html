@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detalle del Peugeot 208 | Auto Libre. Compra y venta de autos seleccionados.">
+  <title>Detalle del Peugeot 208 | Auto Libre</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- Encabezado compartido: marca y enlaces entre páginas. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Auto Libre, ir al inicio"><img src="img/logo-autolibre.png" alt="Logo de Auto Libre" class="logo-image"></a>
+      <nav aria-label="Navegación principal"><ul class="nav-list"><li><a href="index.html">Inicio</a></li><li><a href="productos.html">Autos</a></li><li><a href="reservar.html">Reservar turno</a></li><li><a href="vender.html">Vender tu auto</a></li><li><a href="actividad.html">Actividad</a></li><li><a href="login.html">Cuenta</a></li></ul></nav>
+    </div>
+  </header>
+  <main id="contenido">
+<section class="section container detail" aria-labelledby="nombre-vehiculo">
+  <img class="detail-image" src="img/peugeot-208.png" alt="Peugeot 208 azul">
+  <div><p class="muted"><a href="productos.html">Autos</a> / Hatchbacks</p><h1 id="nombre-vehiculo">Peugeot 208 GT 2024</h1><p class="price">Precio: $ 32.500.000</p>
+    <p>Hatchback con 18.500 km, motor naftero, caja automática y excelente estado general.</p>
+    <!-- Formulario para elegir versión y año antes de guardar el favorito. -->
+    <form class="stack" id="form-favorito">
+      <div><label for="version">Versión</label><select id="version" name="version" required><option value="">Elegí una versión</option><option>Active</option><option>Allure</option><option>GT</option></select></div>
+      <div><label for="anio">Año</label><input id="anio" name="anio" type="number" min="1900" max="2100" required></div>
+      <button class="button" type="submit">Guardar en favoritos</button>
+    </form><p id="estado-favorito" role="status"></p>
+    <p class="notice">Disponible para entrega inmediata en Ciudad de Buenos Aires.</p>
+  </div>
+</section>
+  </main>
+  <!-- Pie compartido con contacto y horarios. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h2>Auto Libre</h2><p>Compra y venta de autos seleccionados.</p></div>
+        <div><h2>Ayuda</h2><p><a href="contacto.html">Contacto</a></p><p>Atención: lunes a viernes de 9 a 18 h</p></div>
+        <div><h2>Seguinos</h2><p>Instagram: @autolibre.ar</p><p>Correo: autolibre@gmail.com</p></div>
+      </div>
+      <p class="footer-bottom">© 2026 Auto Libre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+<script src="js/app.js" defer></script></body>
+</html>

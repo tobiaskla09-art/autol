@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ingresar o registrarse | Auto Libre. Compra y venta de autos seleccionados.">
+  <title>Ingresar o registrarse | Auto Libre</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- Encabezado compartido: marca y enlaces entre páginas. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Auto Libre, ir al inicio"><img src="img/logo-autolibre.png" alt="Logo de Auto Libre" class="logo-image"></a>
+      <nav aria-label="Navegación principal"><ul class="nav-list"><li><a href="index.html">Inicio</a></li><li><a href="productos.html">Autos</a></li><li><a href="reservar.html">Reservar turno</a></li><li><a href="vender.html">Vender tu auto</a></li><li><a href="actividad.html">Actividad</a></li><li><a href="login.html">Cuenta</a></li></ul></nav>
+    </div>
+  </header>
+  <main id="contenido">
+<div class="container page-heading"><h1>Tu cuenta</h1><p class="notice">Ingresá con tu correo electrónico para gestionar tu cuenta.</p></div>
+<section class="section container"><div class="grid">
+  <form class="stack" id="form-login"><h2>Ingresar</h2><div><label for="login-email">Correo electrónico</label><input id="login-email" type="email" autocomplete="email" required></div><button class="button" type="submit">Ingresar</button></form>
+  <form class="stack" id="form-registro"><h2>Crear cuenta</h2><div><label for="registro-nombre">Nombre</label><input id="registro-nombre" autocomplete="name" required></div><div><label for="registro-email">Correo electrónico</label><input id="registro-email" type="email" autocomplete="email" required></div><button class="button" type="submit">Registrarse</button></form>
+</div><p class="container" id="estado-cuenta" role="status"></p></section>
+  </main>
+  <!-- Pie compartido con contacto y horarios. -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h2>Auto Libre</h2><p>Compra y venta de autos seleccionados.</p></div>
+        <div><h2>Ayuda</h2><p><a href="contacto.html">Contacto</a></p><p>Atención: lunes a viernes de 9 a 18 h</p></div>
+        <div><h2>Seguinos</h2><p>Instagram: @autolibre.ar</p><p>Correo: autolibre@gmail.com</p></div>
+      </div>
+      <p class="footer-bottom">© 2026 Auto Libre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+<script src="js/app.js" defer></script></body>
+</html>
