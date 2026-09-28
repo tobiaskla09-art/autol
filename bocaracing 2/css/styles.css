@@ -1,0 +1,102 @@
+/* Variables: cambiar estos colores actualiza toda la tienda. */
+:root { --ink:#222; --muted:#666; --accent:#0876bf; --paper:#fff; --soft:#f1f6fa; --line:#ddd; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; font-family:Arial, sans-serif; color:var(--ink); background:var(--paper); line-height:1.5; }
+img { display:block; max-width:100%; }
+a { color:inherit; }
+.container { width:min(1120px, 92%); margin-inline:auto; }
+.skip-link { position:absolute; left:-9999px; top:0; background:#fff; padding:10px; z-index:10; }
+.skip-link:focus { left:10px; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.site-header { border-bottom:1px solid var(--line); background:#fff; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:18px; }
+.logo { font-size:1.5rem; font-weight:800; text-decoration:none; letter-spacing:.04em; }
+.nav-list { display:flex; flex-wrap:wrap; gap:8px 20px; list-style:none; margin:0; padding:0; }
+.nav-list a { text-decoration:none; }
+.nav-list a:hover, .nav-list a[aria-current="page"] { color:var(--accent); text-decoration:underline; }
+main { min-height:55vh; }
+.section { padding-block:54px; }
+.section-soft { background:var(--soft); }
+h1,h2,h3 { line-height:1.2; }
+h1 { font-size:clamp(2rem,5vw,3.5rem); }
+h2 { font-size:clamp(1.5rem,3vw,2rem); }
+.lead { max-width:65ch; color:var(--muted); }
+.hero { background:var(--soft); }
+.hero-inner { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:32px; min-height:440px; }
+.hero-image { width:100%; height:400px; object-fit:cover; background:#e5ddd5; }
+.button { display:inline-block; padding:12px 19px; border:1px solid var(--accent); border-radius:4px; background:var(--accent); color:#fff; font:inherit; text-align:center; text-decoration:none; cursor:pointer; }
+.button:hover { background:#065b94; }
+.button-secondary { background:transparent; color:var(--accent); }
+.button-secondary:hover { color:#fff; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.card { border:1px solid var(--line); border-radius:6px; overflow:hidden; background:#fff; }
+.card img { width:100%; aspect-ratio:16/10; object-fit:cover; background:#eee; }
+.card-body { padding:18px; }
+.card h3 { margin:0 0 8px; }
+.price { font-weight:700; }
+.muted { color:var(--muted); }
+.page-heading { padding-block:36px 8px; }
+.detail { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+.detail-image { width:100%; aspect-ratio:16/10; object-fit:cover; background:#eee; }
+.stack { display:grid; gap:16px; max-width:600px; }
+label { display:block; margin-bottom:5px; font-weight:700; }
+input,select,textarea { width:100%; padding:11px; border:1px solid #999; border-radius:4px; font:inherit; background:#fff; }
+textarea { min-height:120px; resize:vertical; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.notice { padding:15px; border-left:4px solid var(--accent); background:var(--soft); }
+.cart-item { display:grid; grid-template-columns:90px 1fr auto; gap:18px; align-items:center; border-bottom:1px solid var(--line); padding-block:20px; }
+.cart-item img { width:90px; height:80px; object-fit:cover; }
+.summary { margin-top:25px; padding:20px; background:var(--soft); }
+.site-footer { padding-block:40px; background:#242424; color:#fff; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:24px; }
+.site-footer a { color:#fff; }
+.footer-bottom { margin-top:25px; padding-top:15px; border-top:1px solid #777; }
+@media (max-width:700px) {
+  .header-inner { align-items:flex-start; flex-direction:column; }
+  .hero-inner,.detail,.footer-grid { grid-template-columns:1fr; }
+  .hero-image { height:300px; }
+  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .form-row { grid-template-columns:1fr; }
+}
+@media (max-width:480px) {
+  .grid { grid-template-columns:1fr; }
+  .cart-item { grid-template-columns:70px 1fr; }
+  .cart-item .price { grid-column:2; }
+  .section { padding-block:36px; }
+}
+
+/* Componentes de la maqueta móvil de Auto Libre. */
+.quick-actions{display:flex;gap:8px;flex-wrap:wrap;padding-top:18px}
+.quick{flex:1;min-width:100px;text-align:center;padding:9px 5px;border-radius:5px;text-decoration:none;font-size:.8rem;font-weight:700;color:#111}
+.red{background:#f53737}.yellow{background:#f7e720}.purple{background:#7041ed;color:#fff}.green{background:#21e826}
+.narrow{max-width:670px}.activity-list{list-style:none;padding:0}.activity-list li{display:flex;gap:14px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}
+.activity-list p{margin:2px 0;color:var(--muted)}.avatar{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#e4eef8;color:#0867ac;font-weight:bold}
+.chat-box{display:flex;flex-direction:column;gap:14px;min-height:320px;padding:20px;background:#f8f8f8;border-radius:8px;margin-bottom:20px}
+.bubble{max-width:75%;padding:12px 16px;border-radius:15px;background:#e6e6e6}.bubble.outgoing{align-self:flex-end;background:#111;color:#fff}
+@media(max-width:700px){.quick{min-width:calc(50% - 8px)}.hero-inner{min-height:350px}.hero-image{height:220px}}
+
+.placeholder-auto{display:grid;place-items:center;min-height:180px;background:#e7f0f7;color:#555}
+.saved-row{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:16px;border-bottom:1px solid var(--line)}
+[role="status"]{font-weight:700;color:#0867ac}
+@media(max-width:500px){.saved-row{align-items:flex-start;flex-direction:column}}
+
+.photo-note{font-size:.8rem;color:#666;padding-top:10px;margin-bottom:0}
+.hero-image,.detail-image,.card img,.cart-item img{object-fit:cover}
+
+.logo-image{display:block;width:150px;max-height:72px;object-fit:contain}
+.site-header .logo{display:inline-block}
+
+/* Fotos completas sin estirarlas ni recortarlas. */
+.hero-image,.detail-image,.card img,.cart-item img{object-fit:contain;background:#f5f5f5}
+
+/* Pantalla de confirmación de la maqueta. */
+.success-page{min-height:100vh;background:#28b300;color:white;display:grid;place-items:center;text-align:center}
+.success-content{width:min(420px,92%);padding:30px 20px}
+.success-content h1{font-size:clamp(2.5rem,8vw,4rem)}
+.success-check{display:grid;place-items:center;width:180px;height:180px;margin:28px auto;border-radius:24px;background:#79bc52;color:white;font-size:8rem;font-weight:bold}
+.success-button{display:block;padding:12px;background:#111;color:white;border-radius:25px;text-decoration:none;margin-top:30px}
+
+.logo-text{font-size:1.45rem;font-weight:900;letter-spacing:.03em;color:#fff;text-transform:lowercase}
+
+.activity-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}.activity-chat{margin-top:28px}.activity-chat h2{margin-bottom:14px}
